@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="499.0" prefWidth="609.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tersane1.RaporController">
+   <children>
+      <SplitPane dividerPositions="0.14" layoutX="128.0" layoutY="-6.0" prefHeight="160.0" prefWidth="200.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" AnchorPane.bottomAnchor="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="37.0" fitWidth="39.0" layoutX="23.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/company.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="167.0" layoutY="14.0" text="TERSANE ADI" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <TextField layoutX="305.0" layoutY="114.0" prefHeight="49.0" prefWidth="166.0" promptText="Operatör ID" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" />
+      <ChoiceBox layoutX="305.0" layoutY="293.0" prefHeight="40.0" prefWidth="166.0" />
+      <Label layoutX="136.0" layoutY="293.0" prefHeight="40.0" prefWidth="120.0" style="-fx-border-color: #ffff;" text="MÜŞTERİ" textFill="WHITE" />
+      <Label layoutX="136.0" layoutY="119.0" prefHeight="40.0" prefWidth="120.0" style="-fx-border-color: #ffff;" text="Operatör ID" textFill="WHITE" />
+      <Button fx:id="yaz" layoutX="362.0" layoutY="358.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="49.0" prefWidth="109.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="RAPOR YAZ" textFill="WHITE" />
+      <Label layoutX="136.0" layoutY="178.0" prefHeight="40.0" prefWidth="120.0" style="-fx-border-color: #ffff;" text="Değerlendiren ID" textFill="WHITE" />
+      <TextField layoutX="305.0" layoutY="173.0" prefHeight="49.0" prefWidth="166.0" promptText="Operatör ID" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" />
+      <Label layoutX="136.0" layoutY="235.0" prefHeight="40.0" prefWidth="120.0" style="-fx-border-color: #ffff;" text="Onaylayan ID" textFill="WHITE" />
+      <TextField layoutX="305.0" layoutY="231.0" prefHeight="49.0" prefWidth="166.0" promptText="Onaylayan ID" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" />
+      <Button fx:id="anasayfa" layoutX="14.0" layoutY="58.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="Anasayfa" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

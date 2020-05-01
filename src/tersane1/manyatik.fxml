@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="538.0" prefWidth="773.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tersane1.ManyatikController">
+   <children>
+      <SplitPane dividerPositions="0.14" layoutX="105.0" layoutY="28.0" prefHeight="55.0" prefWidth="773.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" AnchorPane.bottomAnchor="483.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="36.0" fitWidth="49.0" layoutX="17.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/company.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="198.0" layoutY="14.0" text="TERSANE ADI" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="87.0" prefHeight="36.0" prefWidth="150.0" style="-fx-border-color: #ffff; -fx-border-radius: 5;" text="Müşteri" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="139.0" prefHeight="36.0" prefWidth="150.0" style="-fx-border-color: #ffff; -fx-border-radius: 5;" text="Proje Adı" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="176.0" layoutY="87.0" prefHeight="36.0" prefWidth="208.0" />
+      <ChoiceBox layoutX="176.0" layoutY="139.0" prefHeight="36.0" prefWidth="208.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="196.0" prefHeight="36.0" prefWidth="150.0" style="-fx-border-color: #ffff; -fx-border-radius: 5;" text="Test Yeri" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="176.0" layoutY="196.0" prefHeight="36.0" prefWidth="208.0" promptText="İlçe/İl" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="İZMİT" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="251.0" prefHeight="36.0" prefWidth="150.0" style="-fx-border-color: #ffff; -fx-border-radius: 5;" text="Muayene Standardı" textFill="WHITE" />
+      <TextField layoutX="176.0" layoutY="251.0" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="TS EN ISO 17638">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="302.0" prefHeight="36.0" prefWidth="150.0" style="-fx-border-color: #ffff; -fx-border-radius: 5;" text="Değerlen. Standardı" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="176.0" layoutY="302.0" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="TS EN ISO 23278 Class B">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="356.0" prefHeight="36.0" prefWidth="150.0" style="-fx-border-color: #ffff; -fx-border-radius: 5;" text="Muayene Prosedürü" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="176.0" layoutY="356.0" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="P-101-004">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="412.0" prefHeight="36.0" prefWidth="150.0" style="-fx-border-color: #ffff; -fx-border-radius: 5;" text="Muayene Kapsamı" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="176.0" layoutY="412.0" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="\%100">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="468.0" prefHeight="36.0" prefWidth="150.0" style="-fx-border-color: #ffff; -fx-border-radius: 5;" text="Resim No" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="176.0" layoutY="468.0" prefHeight="36.0" prefWidth="208.0" promptText="-" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="394.0" layoutY="87.0" prefHeight="36.0" prefWidth="150.0" style="-fx-border-color: #ffff; -fx-border-radius: 5;" text="Yüzey Durumu" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="551.0" layoutY="87.0" prefHeight="36.0" prefWidth="208.0" />
+      <Label alignment="CENTER" layoutX="394.0" layoutY="139.0" prefHeight="36.0" prefWidth="150.0" style="-fx-border-color: #ffff; -fx-border-radius: 5;" text="Muayene Aşaması" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="551.0" layoutY="139.0" prefHeight="36.0" prefWidth="208.0" />
+      <Label alignment="CENTER" layoutX="394.0" layoutY="196.0" prefHeight="36.0" prefWidth="150.0" style="-fx-border-color: #ffff; -fx-border-radius: 5;" text="Sayfa No" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="551.0" layoutY="196.0" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="1">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="394.0" layoutY="251.0" prefHeight="36.0" prefWidth="150.0" style="-fx-border-color: #ffff; -fx-border-radius: 5;" text="Rapor No" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="551.0" layoutY="251.0" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="2019101621">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="394.0" layoutY="302.0" prefHeight="36.0" prefWidth="150.0" style="-fx-border-color: #ffff; -fx-border-radius: 5;" text="Rapor Tarihi" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="551.0" layoutY="302.0" prefHeight="36.0" prefWidth="208.0" promptText="tarih" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="394.0" layoutY="356.0" prefHeight="36.0" prefWidth="150.0" style="-fx-border-color: #ffff; -fx-border-radius: 5;" text="İş Emri" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="551.0" layoutY="356.0" prefHeight="36.0" prefWidth="208.0" />
+      <Label alignment="CENTER" layoutX="394.0" layoutY="412.0" prefHeight="36.0" prefWidth="150.0" style="-fx-border-color: #ffff; -fx-border-radius: 5;" text="Teklif No" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="551.0" layoutY="412.0" prefHeight="36.0" prefWidth="208.0" />
+      <Button fx:id="sonraki" layoutX="465.0" layoutY="469.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="34.0" prefWidth="158.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="Sonraki Sayfa" textFill="WHITE" />
+   </children>
+</AnchorPane>

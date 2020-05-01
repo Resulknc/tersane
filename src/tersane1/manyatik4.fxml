@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="538.0" prefWidth="773.0" style="-fx-background-color: #2c3e50;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="tersane1.Manyatik4Controller">
+   <children>
+      <SplitPane dividerPositions="0.14" layoutX="5.0" layoutY="6.0" prefHeight="55.0" prefWidth="773.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="36.0" fitWidth="49.0" layoutX="17.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/company.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="198.0" layoutY="14.0" text="TERSANE ADI" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="80.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" text="Sıra No" textFill="#f8f8f8" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="116.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" text="1" textFill="#f8f8f8" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="152.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" text="2" textFill="#f8f8f8" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="188.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" text="3" textFill="#f8f8f8" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="224.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" text="4" textFill="#f8f8f8" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="260.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" text="5" textFill="#f8f8f8" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="296.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" text="6" textFill="#f8f8f8" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="332.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" text="7" textFill="#f8f8f8" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="368.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" text="8" textFill="#f8f8f8" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="404.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" text="9" textFill="#f8f8f8" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="440.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" text="10" textFill="#f8f8f8" />
+      <Label alignment="CENTER" layoutX="79.0" layoutY="80.0" prefHeight="36.0" prefWidth="163.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" text="Kaynaklı Parça No" textFill="#f8f8f8" />
+      <Label alignment="CENTER" layoutX="242.0" layoutY="80.0" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" text="Kontrol Uzunluğu" textFill="#f8f8f8" />
+      <Label alignment="CENTER" layoutX="347.0" layoutY="80.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" text="Kaynak Yön." textFill="#f8f8f8" />
+      <Label alignment="CENTER" layoutX="423.0" layoutY="80.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" text="Kalınlık" textFill="#f8f8f8" />
+      <Label alignment="CENTER" layoutX="488.0" layoutY="80.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" text="Çap" textFill="#f8f8f8" />
+      <Label alignment="CENTER" layoutX="553.0" layoutY="80.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" text="Hata Tipi" textFill="#f8f8f8" />
+      <Label alignment="CENTER" layoutX="618.0" layoutY="80.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" text="Hatanın Yeri" textFill="#f8f8f8" />
+      <Label alignment="CENTER" layoutX="694.0" layoutY="80.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" text="Sonuç" textFill="#f8f8f8" />
+      <TextField layoutX="79.0" layoutY="116.0" prefHeight="36.0" prefWidth="163.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="79.0" layoutY="152.0" prefHeight="36.0" prefWidth="163.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="79.0" layoutY="188.0" prefHeight="36.0" prefWidth="163.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="79.0" layoutY="224.0" prefHeight="36.0" prefWidth="163.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="79.0" layoutY="260.0" prefHeight="36.0" prefWidth="163.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="79.0" layoutY="296.0" prefHeight="36.0" prefWidth="163.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="79.0" layoutY="332.0" prefHeight="36.0" prefWidth="163.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="79.0" layoutY="368.0" prefHeight="36.0" prefWidth="163.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="79.0" layoutY="404.0" prefHeight="36.0" prefWidth="163.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="79.0" layoutY="440.0" prefHeight="36.0" prefWidth="163.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="242.0" layoutY="116.0" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="242.0" layoutY="188.0" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="242.0" layoutY="152.0" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="242.0" layoutY="224.0" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="242.0" layoutY="260.0" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="242.0" layoutY="296.0" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="242.0" layoutY="332.0" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="242.0" layoutY="368.0" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="242.0" layoutY="404.0" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="242.0" layoutY="440.0" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="347.0" layoutY="116.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="347.0" layoutY="152.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="347.0" layoutY="188.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="347.0" layoutY="224.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="347.0" layoutY="260.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="347.0" layoutY="296.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="347.0" layoutY="332.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="347.0" layoutY="368.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="347.0" layoutY="404.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="347.0" layoutY="440.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="423.0" layoutY="116.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="423.0" layoutY="152.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="423.0" layoutY="188.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="423.0" layoutY="224.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="423.0" layoutY="260.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="423.0" layoutY="296.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="423.0" layoutY="332.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="423.0" layoutY="368.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="423.0" layoutY="404.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="423.0" layoutY="440.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="488.0" layoutY="116.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="488.0" layoutY="152.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="488.0" layoutY="188.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="488.0" layoutY="224.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="488.0" layoutY="260.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="488.0" layoutY="296.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="488.0" layoutY="332.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="488.0" layoutY="368.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="488.0" layoutY="404.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="488.0" layoutY="440.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="553.0" layoutY="116.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="553.0" layoutY="152.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="553.0" layoutY="188.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="553.0" layoutY="224.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="553.0" layoutY="260.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="553.0" layoutY="296.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="553.0" layoutY="332.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="553.0" layoutY="368.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="553.0" layoutY="404.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="553.0" layoutY="440.0" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="618.0" layoutY="116.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="618.0" layoutY="152.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="618.0" layoutY="188.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="618.0" layoutY="224.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="618.0" layoutY="260.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="618.0" layoutY="296.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="618.0" layoutY="332.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="618.0" layoutY="368.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="618.0" layoutY="404.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <TextField layoutX="618.0" layoutY="440.0" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" />
+      <Button fx:id="önceki" layoutX="436.0" layoutY="488.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="Önceki Sayfa" textFill="WHITE" />
+      <Button fx:id="bitir" layoutX="596.0" layoutY="488.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="Bitir" textFill="WHITE" />
+      <ChoiceBox layoutX="694.0" layoutY="116.0" prefHeight="36.0" prefWidth="65.0" />
+      <ChoiceBox layoutX="694.0" layoutY="440.0" prefHeight="36.0" prefWidth="65.0" />
+      <ChoiceBox layoutX="694.0" layoutY="188.0" prefHeight="36.0" prefWidth="65.0" />
+      <ChoiceBox layoutX="694.0" layoutY="224.0" prefHeight="36.0" prefWidth="65.0" />
+      <ChoiceBox layoutX="694.0" layoutY="260.0" prefHeight="36.0" prefWidth="65.0" />
+      <ChoiceBox layoutX="694.0" layoutY="296.0" prefHeight="36.0" prefWidth="65.0" />
+      <ChoiceBox layoutX="694.0" layoutY="332.0" prefHeight="36.0" prefWidth="65.0" />
+      <ChoiceBox layoutX="694.0" layoutY="368.0" prefHeight="36.0" prefWidth="65.0" />
+      <ChoiceBox layoutX="694.0" layoutY="404.0" prefHeight="36.0" prefWidth="65.0" />
+      <ChoiceBox layoutX="694.0" layoutY="152.0" prefHeight="36.0" prefWidth="65.0" />
+   </children>
+</AnchorPane>

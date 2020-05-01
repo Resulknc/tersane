@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="499.0" prefWidth="609.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tersane1.EkleController">
+   <children>
+      <TextField fx:id="ad" layoutX="55.0" layoutY="181.0" prefHeight="45.0" prefWidth="164.0" promptText="AD" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="soyad" layoutX="55.0" layoutY="250.0" prefHeight="45.0" prefWidth="164.0" promptText="SOYAD" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="level" layoutX="55.0" layoutY="318.0" prefHeight="45.0" prefWidth="164.0" promptText="LEVEL" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <Button fx:id="ekle" layoutX="328.0" layoutY="408.0" mnemonicParsing="false" onAction="#ekle" prefHeight="49.0" prefWidth="109.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" stylesheets="@../css/newCascadeStyleSheet.css" text="EKLE" textFill="WHITE" />
+      <SplitPane dividerPositions="0.14" layoutX="55.0" layoutY="105.0" prefHeight="160.0" prefWidth="350.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" AnchorPane.bottomAnchor="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/company.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="169.0" layoutY="6.0" text="TERSANE ADI" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <Label fx:id="oldumu" alignment="CENTER" layoutX="207.0" layoutY="475.0" prefHeight="21.0" prefWidth="196.0">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="ıd" layoutX="55.0" layoutY="115.0" promptText="ID" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css" AnchorPane.bottomAnchor="339.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="390.0" AnchorPane.topAnchor="115.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="anasayfa" layoutX="14.0" layoutY="66.0" mnemonicParsing="false" onAction="#HandleButtonAction" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="Anasayfa" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="düzelt" layoutX="192.0" layoutY="408.0" mnemonicParsing="false" onAction="#düzelt" prefHeight="49.0" prefWidth="109.0" style="-fx-background-color: #2C3E50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="GÜNCELLE" textFill="WHITE" />
+      <Button fx:id="sil" layoutX="55.0" layoutY="408.0" mnemonicParsing="false" onAction="#sil" prefHeight="49.0" prefWidth="109.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="SİL" textFill="WHITE" />
+      <TableView fx:id="personeller_table" layoutX="245.0" layoutY="87.0" prefHeight="286.0" prefWidth="330.0">
+        <columns>
+          <TableColumn fx:id="pers_ID" prefWidth="81.0" text="ID" />
+          <TableColumn fx:id="pers_AD" prefWidth="87.0" text="İsim" />
+            <TableColumn fx:id="pers_SOYAD" prefWidth="81.0" text="Soyisim" />
+            <TableColumn fx:id="pers_LEVEL" text="Seviye" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
