@@ -52,21 +52,60 @@ public class EkleController implements Initializable {
     @FXML
     private Button sil;
     @FXML
-    private TableView<personel> personeller_table;
+    private  TableView<personel> personeller_table;
     @FXML
-    private TableColumn<personel, String> pers_ID;
+    private  TableColumn<personel, String> pers_ID;
     @FXML
-    private TableColumn<personel, String> pers_AD;
+    private  TableColumn<personel, String> pers_AD;
     @FXML
-    private TableColumn<personel,String> pers_SOYAD;
+    private  TableColumn<personel,String> pers_SOYAD;
     @FXML
-    private TableColumn<personel,String> pers_LEVEL;
+    private  TableColumn<personel,String> pers_LEVEL;
     
-    private ObservableList<personel>data;
+    private  ObservableList<personel>data;
 
     /**
      * Initializes the controller class.
      */
+     public void tablo(){
+       try {
+            
+            data = FXCollections.observableArrayList();
+            ResultSet rs = con.createStatement().executeQuery("SELECT * FROM calisanlar");
+            while(rs.next()) {
+
+                data.add(new personel(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4)));
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(EkleController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        pers_ID.setCellValueFactory(new PropertyValueFactory<>("id"));
+        pers_AD.setCellValueFactory(new PropertyValueFactory<>("ad"));
+        pers_SOYAD.setCellValueFactory(new PropertyValueFactory<>("soyad"));
+        pers_LEVEL.setCellValueFactory(new PropertyValueFactory<>("level"));
+
+        personeller_table.setItems(null);
+        personeller_table.setItems(data);
+       /*try {
+            
+            data = FXCollections.observableArrayList();
+            ResultSet rs = con.createStatement().executeQuery("SELECT * FROM calisanlar");
+            while(rs.next()) {
+
+                data.add(new personel(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4)));
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(EkleController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        pers_ID.setCellValueFactory(new PropertyValueFactory<>("id"));
+        pers_AD.setCellValueFactory(new PropertyValueFactory<>("ad"));
+        pers_SOYAD.setCellValueFactory(new PropertyValueFactory<>("soyad"));
+        pers_LEVEL.setCellValueFactory(new PropertyValueFactory<>("level"));
+
+        personeller_table.setItems(null);
+        personeller_table.setItems(data);*/
+    }
+    
     @FXML
     public void HandleButtonAction(ActionEvent event){
         if(event.getSource()==anasayfa){
@@ -91,24 +130,8 @@ public class EkleController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         database.baglan();
-         try {
-            
-            data = FXCollections.observableArrayList();
-            ResultSet rs = con.createStatement().executeQuery("SELECT * FROM calisanlar");
-            while(rs.next()) {
-
-                data.add(new personel(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4)));
-            }
-        } catch (SQLException ex) {
-            Logger.getLogger(EkleController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        pers_ID.setCellValueFactory(new PropertyValueFactory<>("id"));
-        pers_AD.setCellValueFactory(new PropertyValueFactory<>("ad"));
-        pers_SOYAD.setCellValueFactory(new PropertyValueFactory<>("soyad"));
-        pers_LEVEL.setCellValueFactory(new PropertyValueFactory<>("level"));
-
-        personeller_table.setItems(null);
-        personeller_table.setItems(data);
+        tablo();
+         
     }    
     
     
@@ -126,7 +149,7 @@ public class EkleController implements Initializable {
             
         oldumu.setTextFill(Color.GREEN);
         oldumu.setText("BAŞARIYLA EKLENDİ");
-      
+        tablo();
                  
     }
 
@@ -140,7 +163,8 @@ public class EkleController implements Initializable {
         database.update(id, name, soy, lev);
         
         oldumu.setTextFill(Color.GREEN);
-        oldumu.setText("BAŞARIYLA GÜNCELLENDİ");            
+        oldumu.setText("BAŞARIYLA GÜNCELLENDİ");   
+        tablo();
     }
 
     @FXML
@@ -151,6 +175,7 @@ public class EkleController implements Initializable {
             
         oldumu.setTextFill(Color.GREEN);
         oldumu.setText("BAŞARIYLA SİLİNDİ");    
+        tablo();
         
     }
 

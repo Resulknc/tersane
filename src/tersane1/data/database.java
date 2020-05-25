@@ -9,6 +9,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.collections.FXCollections;
+import javafx.scene.control.cell.PropertyValueFactory;
+import tersane1.EkleController;
+import tersane1.personel;
+
 
 public class database {
 
@@ -39,7 +44,9 @@ public class database {
                 ex.printStackTrace();
             }
         }
-        public static void insert(String id,String name,String soy,String lev){
+        
+        
+    public static void insert(String id,String name,String soy,String lev){
         String sql="INSERT INTO CALISANLAR(ıd,isim,soyisim,level) VALUES(?,?,?,?)";
         try {           
             ps=database.con.prepareStatement(sql);
@@ -82,5 +89,7 @@ public class database {
             Logger.getLogger(database.class.getName()).log(Level.SEVERE, null, ex);
         }       
     }
+    
+   
          
 }

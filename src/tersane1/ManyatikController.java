@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -26,6 +27,8 @@ public class ManyatikController implements Initializable {
 
     @FXML
     private Button sonraki;
+    @FXML
+    private TextField sehir;
 
     @FXML
     public void handleButtonAction(ActionEvent event) throws IOException{
