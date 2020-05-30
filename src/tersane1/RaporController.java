@@ -7,7 +7,10 @@ package tersane1;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -15,7 +18,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
 import javafx.stage.Stage;
+import tersane1.data.database;
 
 /**
  * FXML Controller class
@@ -28,11 +33,17 @@ public class RaporController implements Initializable {
     private Button yaz;
     @FXML
     private Button anasayfa;
+    @FXML
+    private ChoiceBox<String> mstr;
 
     @FXML
     public void handleButtonAction(ActionEvent event){
         if(event.getSource()==yaz){
             try{
+                
+                String secilenmstr=mstr.getSelectionModel().getSelectedItem().toString();
+                System.out.println(secilenmstr);
+                
                 Node node=(Node) event.getSource();
                 Stage stage=(Stage) node.getScene().getWindow();
                 stage.close();
@@ -66,7 +77,12 @@ public class RaporController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        String sql = "SELECT adı from musteri ";
+        try {
+            mstr.getItems().addAll(database.showMusteri(sql));
+        } catch (SQLException ex) {
+            Logger.getLogger(RaporController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }    
     
 }

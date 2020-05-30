@@ -86,24 +86,6 @@ public class EkleController implements Initializable {
 
         personeller_table.setItems(null);
         personeller_table.setItems(data);
-       /*try {
-            
-            data = FXCollections.observableArrayList();
-            ResultSet rs = con.createStatement().executeQuery("SELECT * FROM calisanlar");
-            while(rs.next()) {
-
-                data.add(new personel(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4)));
-            }
-        } catch (SQLException ex) {
-            Logger.getLogger(EkleController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        pers_ID.setCellValueFactory(new PropertyValueFactory<>("id"));
-        pers_AD.setCellValueFactory(new PropertyValueFactory<>("ad"));
-        pers_SOYAD.setCellValueFactory(new PropertyValueFactory<>("soyad"));
-        pers_LEVEL.setCellValueFactory(new PropertyValueFactory<>("level"));
-
-        personeller_table.setItems(null);
-        personeller_table.setItems(data);*/
     }
     
     @FXML
@@ -143,8 +125,9 @@ public class EkleController implements Initializable {
         String nach=soyad.getText();      
         String lev=level.getText();
         String id=ıd.getText();
-               
-        database.insert(id, name, nach, lev);
+        
+        personel a=new personel(id,name,nach,lev);
+        database.insert(a);
             
             
         oldumu.setTextFill(Color.GREEN);
@@ -159,8 +142,8 @@ public class EkleController implements Initializable {
         String soy=soyad.getText();
         String id=ıd.getText();
         String lev=level.getText();
-        
-        database.update(id, name, soy, lev);
+        personel b=new personel(id,name,soy,lev);
+        database.update(b);
         
         oldumu.setTextFill(Color.GREEN);
         oldumu.setText("BAŞARIYLA GÜNCELLENDİ");   
@@ -178,16 +161,4 @@ public class EkleController implements Initializable {
         tablo();
         
     }
-
-    /*@FXML
-    private void ekle(ActionEvent event) {
-    }
-
-    @FXML
-    private void düzelt(ActionEvent event) {
-    }
-
-    @FXML
-    private void sil(ActionEvent event) {
-    }*/
 }

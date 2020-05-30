@@ -51,9 +51,9 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="sehir" layoutX="176.0" layoutY="196.0" prefHeight="36.0" prefWidth="208.0" promptText="İlçe/İl" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="İZMİT" />
+      <TextField fx:id="sehir" layoutX="176.0" layoutY="196.0" prefHeight="36.0" prefWidth="208.0" promptText="İlçe/İl" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css" text="İZMİT" />
       <Label alignment="CENTER" layoutX="14.0" layoutY="251.0" prefHeight="36.0" prefWidth="150.0" style="-fx-border-color: #ffff; -fx-border-radius: 5;" text="Muayene Standardı" textFill="WHITE" />
-      <TextField layoutX="176.0" layoutY="251.0" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="TS EN ISO 17638">
+      <TextField layoutX="176.0" layoutY="251.0" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css" text="TS EN ISO 17638">
          <font>
             <Font size="15.0" />
          </font>
@@ -63,7 +63,7 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField layoutX="176.0" layoutY="302.0" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="TS EN ISO 23278 Class B">
+      <TextField layoutX="176.0" layoutY="302.0" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css" text="TS EN ISO 23278 Class B">
          <font>
             <Font size="15.0" />
          </font>
@@ -73,7 +73,7 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField layoutX="176.0" layoutY="356.0" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="P-101-004">
+      <TextField layoutX="176.0" layoutY="356.0" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css" text="P-101-004">
          <font>
             <Font size="15.0" />
          </font>
@@ -83,7 +83,7 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField layoutX="176.0" layoutY="412.0" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="\%100">
+      <TextField layoutX="176.0" layoutY="412.0" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css" text="\%100">
          <font>
             <Font size="15.0" />
          </font>
@@ -93,7 +93,7 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField layoutX="176.0" layoutY="468.0" prefHeight="36.0" prefWidth="208.0" promptText="-" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;">
+      <TextField layoutX="176.0" layoutY="468.0" prefHeight="36.0" prefWidth="208.0" promptText="-" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css">
          <font>
             <Font size="15.0" />
          </font>
@@ -115,7 +115,7 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField layoutX="551.0" layoutY="196.0" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="1">
+      <TextField layoutX="551.0" layoutY="196.0" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css" text="1">
          <font>
             <Font size="15.0" />
          </font>
@@ -125,7 +125,7 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField layoutX="551.0" layoutY="251.0" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="2019101621">
+      <TextField layoutX="551.0" layoutY="251.0" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css" text="2019101621">
          <font>
             <Font size="15.0" />
          </font>
@@ -135,7 +135,7 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField layoutX="551.0" layoutY="302.0" prefHeight="36.0" prefWidth="208.0" promptText="tarih" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;">
+      <TextField layoutX="551.0" layoutY="302.0" prefHeight="36.0" prefWidth="208.0" promptText="tarih" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css">
          <font>
             <Font size="15.0" />
          </font>

@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="773.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tersane1.Manyatik3Controller">
    <children>
       <SplitPane dividerPositions="0.14" layoutY="8.0" prefHeight="55.0" prefWidth="773.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff;" AnchorPane.bottomAnchor="483.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -60,19 +59,19 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField layoutX="397.0" layoutY="306.0" prefHeight="36.0" prefWidth="276.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="Standart Sapma Yoktur." />
+      <TextField layoutX="397.0" layoutY="306.0" prefHeight="36.0" prefWidth="276.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css" text="Standart Sapma Yoktur." />
       <Label alignment="CENTER" layoutX="163.0" layoutY="363.0" prefHeight="36.0" prefWidth="150.0" style="-fx-border-color: #ffff; -fx-border-radius: 5;" text="Muayene Tarihleri" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField layoutX="397.0" layoutY="363.0" prefHeight="36.0" prefWidth="276.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="10/16/2019" />
+      <TextField layoutX="397.0" layoutY="363.0" prefHeight="36.0" prefWidth="276.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css" text="10/16/2019" />
       <Label alignment="CENTER" layoutX="163.0" layoutY="414.0" prefHeight="36.0" prefWidth="150.0" style="-fx-border-color: #ffff; -fx-border-radius: 5;" text="Açıklama ve Ekler" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField layoutX="397.0" layoutY="414.0" prefHeight="36.0" prefWidth="276.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" />
+      <TextField layoutX="397.0" layoutY="414.0" prefHeight="36.0" prefWidth="276.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css" />
       <Button fx:id="önceki" layoutX="405.0" layoutY="476.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="Önceki Sayfa" textFill="WHITE" />
       <Button fx:id="sonraki" layoutX="560.0" layoutY="476.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="Sonraki Sayfa" textFill="WHITE" />
    </children>

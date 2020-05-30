@@ -15,7 +15,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import tersane1.data.database;
 
 /**
  * FXML Controller class
@@ -26,6 +28,24 @@ public class EkipmanController implements Initializable {
 
     @FXML
     private Button anasayfa;
+    @FXML
+    private Button ekipekle;
+    @FXML
+    private Button ekipsil;
+    @FXML
+    private Button ekipupdate;
+    @FXML
+    private TextField ad;
+    @FXML
+    private TextField isik;
+    @FXML
+    private TextField uv;
+    @FXML
+    private TextField mıknatıs;
+    @FXML
+    private TextField tasiyici;
+    @FXML
+    private TextField ktp;
 
     /**
      * Initializes the controller class.
@@ -51,6 +71,32 @@ public class EkipmanController implements Initializable {
             }catch(IOException e){
                 System.err.println(e.getMessage());
             }
+        }
+        else if(event.getSource()==ekipekle){
+            String isim=ad.getText();
+            String ıssık=this.isik.getText();
+            String uv=this.uv.getText();
+            String mık=mıknatıs.getText();
+            String tsyc=tasiyici.getText();
+            String kutup=ktp.getText();
+            
+            ekipman a=new ekipman(isim,  kutup,  tsyc,  mık,  uv,  ıssık);
+            database.ekiprinsert(a);
+            
+        }else if(event.getSource()==ekipupdate){
+            String isim=ad.getText();
+            String ıssık=this.isik.getText();
+            String uv=this.uv.getText();
+            String mık=mıknatıs.getText();
+            String tsyc=tasiyici.getText();
+            String kutup=ktp.getText();
+            
+            ekipman a=new ekipman(isim,  kutup,  tsyc,  mık,  uv,  ıssık);
+            database.ekipupdate(a);
+            
+        }else if(event.getSource()==ekipsil){
+            String isim=ad.getText();
+            database.ekipdelete(isim);
         }
     }
     

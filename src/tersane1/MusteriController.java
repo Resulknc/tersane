@@ -15,7 +15,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import tersane1.data.database;
 
 /**
  * FXML Controller class
@@ -26,6 +28,22 @@ public class MusteriController implements Initializable {
 
     @FXML
     private Button anasayfa;
+    @FXML
+    private Button mstekle;
+    @FXML
+    private Button mstsil;
+    @FXML
+    private Button mstupdate;
+    @FXML
+    private TextField ad;
+    @FXML
+    private TextField teklif;
+    @FXML
+    private TextField is;
+    @FXML
+    private TextField ilce;
+    @FXML
+    private TextField il;
 
     @FXML
     public void handleButtonAction(ActionEvent event){
@@ -44,12 +62,38 @@ public class MusteriController implements Initializable {
                 System.err.println(e.getMessage());
             }
         }
+        else if(event.getSource()==mstekle){
+            String isim=ad.getText();
+            String sehir=il.getText();
+            String ilc=ilce.getText();
+            String is= this.is.getText();
+            String teklif= this.teklif.getText();
+            
+            musteri mst=new musteri(isim,sehir,ilc,is,teklif);
+            database.mstrinsert(mst);
+            
+        }else if(event.getSource()==mstupdate){
+            String isim=ad.getText();
+            String sehir=il.getText();
+            String ilc=ilce.getText();
+            String is= this.is.getText();
+            String teklif= this.teklif.getText();
+            
+            musteri mst=new musteri(isim,sehir,ilc,is,teklif);
+            database.mstupdate(mst);
+            
+        }else if(event.getSource()==mstsil){
+            String isim=ad.getText();
+            database.mstdelete(isim);
+        }
+        
+        
     }
     
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        database.baglan();
     }    
     
 }

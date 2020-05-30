@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -32,17 +33,17 @@
             </AnchorPane>
         </items>
       </SplitPane>
-      <Button layoutX="237.0" layoutY="158.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="135.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="Müşteri Ekle" textFill="WHITE">
+      <Button fx:id="mstekle" layoutX="29.0" layoutY="426.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="49.0" prefWidth="135.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="Müşteri Ekle" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <Button layoutX="237.0" layoutY="242.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="135.0" style="-fx-background-color: #2C3E50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="Müşteri Sil" textFill="WHITE">
+      <Button fx:id="mstsil" layoutX="344.0" layoutY="426.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="49.0" prefWidth="135.0" style="-fx-background-color: #2C3E50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="Müşteri Sil" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <Button layoutX="237.0" layoutY="323.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="135.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="Müşteri Düzenle" textFill="WHITE">
+      <Button fx:id="mstupdate" layoutX="189.0" layoutY="426.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="49.0" prefWidth="135.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="Müşteri Düzenle" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
@@ -52,5 +53,15 @@
             <Font size="15.0" />
          </font>
       </Button>
+      <TextField fx:id="ad" layoutX="324.0" layoutY="128.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css" />
+      <TextField fx:id="teklif" layoutX="324.0" layoutY="352.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css" />
+      <TextField fx:id="is" layoutX="324.0" layoutY="294.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css" />
+      <TextField fx:id="ilce" layoutX="324.0" layoutY="240.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css" />
+      <TextField fx:id="il" layoutX="324.0" layoutY="183.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" styleClass="fill-white" stylesheets="@../css/newCascadeStyleSheet.css" />
+      <Label alignment="CENTER" layoutX="149.0" layoutY="128.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="ADI" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="149.0" layoutY="352.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="TEKLİF NO" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="149.0" layoutY="294.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="İŞ EMRİ" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="149.0" layoutY="240.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="İLÇE" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="149.0" layoutY="183.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #2c3e50; -fx-border-color: #ffff; -fx-border-radius: 5;" text="İL" textFill="WHITE" />
    </children>
 </AnchorPane>
