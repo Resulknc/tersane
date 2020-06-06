@@ -191,16 +191,17 @@ public class database {
         }
         return musteriList;
     }
-    /*public ObservableList<String> showMusteri(String sql) throws SQLException {
-        ObservableList<String> musteriList = FXCollections.observableArrayList();
-        connect = db.getConnection();
-        pstmt = connect.prepareStatement(sql);
-        rs = pstmt.executeQuery("SELECT musteri_ad from musteriler ");
+    public static ObservableList<String> showekipman(String sql) throws SQLException {
+        ObservableList<String> ekipmanList = FXCollections.observableArrayList();
+        
+        ps=database.con.prepareStatement(sql);
+        
+        rs=ps.executeQuery("Select adı from ekipman");
         while(rs.next()){
-            musteriList.addAll(rs.getString("musteri_ad"));
+            ekipmanList.addAll(rs.getString("adı"));
         }
-        return musteriList;
-    }*/
-   
-       
+        return ekipmanList;
+    }
+    
+    
 }

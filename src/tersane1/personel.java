@@ -5,8 +5,15 @@
  */
 package tersane1;
 
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+import tersane1.data.database;
+import static tersane1.data.database.con;
 
 /**
  *
@@ -66,6 +73,28 @@ public class personel {
          public StringProperty levelProperty(){
           return level;
       }
+       
+    public static personel must(String id){
+        
+        String query="select * from CALISANLAR where ıd=?";
+        personel mus=null;
+        PreparedStatement prep;
+        
+        try {
+            prep=con.prepareStatement(query);
+            prep.setString(1, id);
+            ResultSet res=prep.executeQuery();
+            
+            while(res.next()){
+                mus=new personel(res.getString("ıd"),res.getString("isim"), res.getString("soyisim"),res.getString("level"));
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(database.class.getName()).log(Level.SEVERE, null, ex);
+        }
+       
+        
+        return mus;
+    }
 
 }
 
