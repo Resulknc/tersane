@@ -5,6 +5,7 @@
  */
 package tersane1;
 
+import PDF.pdf;
 import Excel.excel;
 import java.io.IOException;
 import java.net.URL;
@@ -104,7 +105,7 @@ public class Manyatik4Controller implements Initializable {
     }    
 
     @FXML
-    private void handleButtonAction(ActionEvent event) {
+    private void handleButtonAction(ActionEvent event) throws Exception {
         if(event.getSource()==önceki){
             
             try {
@@ -142,6 +143,10 @@ public class Manyatik4Controller implements Initializable {
                     excel.exc1(RaporController.b.getLevel(), 40, 15);
                     excel.exc1(RaporController.c.getAd(), 39, 20);
                     excel.exc1(RaporController.c.getLevel(), 40, 20);
+                    
+                    System.out.println("sfasdfasdf");
+                    pdf.pdf();
+                    System.out.println("fsdafasdfasdfasdfadsfasfd");
                     
                     Node node=(Node) event.getSource();
                     Stage stage=(Stage) node.getScene().getWindow();
